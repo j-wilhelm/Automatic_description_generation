@@ -1,0 +1,1 @@
+{"GPU_part": true, "webshop_name": "Urban_Outfitters", "raw_imgs_folder": "IMG", "raw_anns_folder": "ANNOS", "desc_filename_length": 9, "embeddings":false, "extractors":[["incv3","fromFF"], ["incv3", "noft"]], "testing":"extensive"}
