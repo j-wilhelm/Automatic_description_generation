@@ -1,6 +1,6 @@
 # LICENSE
 ALL RIGHTS RESERVED. 
-This github page is for research and educational purposes only. It is not allowed to distribute or use this code on any derivations thereof for commercial purposes. Some web shops do not like being scraped. It is your own responsibility to ensure you are scraping according to the web shops terms & conditions and (inter)national law. 
+This Github page is for research and educational purposes only. It is not allowed to distribute or use this code on any derivations thereof for commercial purposes. Some web shops do not like being scraped. It is your own responsibility to ensure you are scraping according to the web shops terms & conditions and (inter)national law. 
 
 Data available upon request.
 
