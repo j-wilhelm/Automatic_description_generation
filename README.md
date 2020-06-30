@@ -4,7 +4,7 @@ This Github page is for research and educational purposes only. It is not allowe
 
 Data available upon request.
 
-# Automatic_description_generation
+# Automatic Description Generation
 Code for Thesis titled FashionDesc -  Automatic Description Generation for Fashion Articles Based on Images.
 
 To redo the experiments for my thesis, follow the steps below. Note that this is a process that will take quite a while in total. Especially scraping a full web shop, uploading the data, and finetuning the feature extractors can be time-consuming. You should expect around 4-12 hours for training a model afterwards.
@@ -23,12 +23,12 @@ Specifically, the scripts expects the following structure locally.
 
 ```
 .
-|-- Results <br>
-    |-- w1_results <br>
-        |-- all_results <br>
+|-- Results 
+    |-- w1_results 
+        |-- all_results 
             |-- results_dictw1_config_1.json
-    |-- w2_results <br> 
-        |-- all_results <br>
+    |-- w2_results 
+        |-- all_results 
 |-- Code
     |-- Preprocessing
         |-- h_prep.py
