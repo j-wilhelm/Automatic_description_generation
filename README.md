@@ -1,10 +1,16 @@
+# LICENSE
+ALL RIGHTS RESERVED. 
+This github page is for research and educational purposes only. It is not allowed to distribute or use this code on any derivations thereof for commercial purposes. Some web shops do not like being scraped. It is your own responsibility to ensure you are scraping according to the web shops terms & conditions and (inter)national law. 
+
+Data available upon request.
+
 # Automatic_description_generation
 Code for Thesis titled FashionDesc -  Automatic Description Generation for Fashion Articles Based on Images.
 
 To redo the experiments for my thesis, follow the steps below. Note that this is a process that will take quite a while in total. Especially scraping a full web shop, uploading the data, and finetuning the feature extractors can be time-consuming. You should expect around 4-12 hours for training a model afterwards.
 
 # Running Experiments
-1. You can run one of the scrapers by changing the path to the chrome webdriver and automatically extract the necessary data from a web shop. Since website structures change frequently, it may be that you need to adjust the scrapers. 
+1. You can run one of the scrapers by changing the path to the chrome webdriver and automatically extract the necessary data from a web shop. Since website structures change frequently, it may be that you need to adjust the scrapers. Moreover, take a look at the robots.txt to add the necessary time.sleep(x) to your code.
 
 2. For preprocessing, you should upload the data (IMG and ANNOS) to the folders specified below on the cluster. Also add all scripts to the root folder. Next, you install the requirements.txt file. After this, preprocessing is needed. For this, you need configuration files. Specifically, you can add a set-up.json file to the root folder of your cluster. An example is added in the examples folder. You need to run the m_dataset_prepping.py twice. First with GPU_part = False to run all text-related stuff over multiple CPU processors. Next, with GPU_part = True to finetune feature extractors and extract features. Specifically, you need to fill the following fields: "GPU_part" "webshop_name", "raw_imgs_folder", "raw_anns_folder", "desc_filename_length", "embeddings":, "extractors", "testing". Generally, you want to fill these the way they are set in the example to extract all necessary information. Run an sbatch command with "python m_dataset_prepping.py -j set_up_config.json". 
 
